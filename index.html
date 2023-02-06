@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--=============== REMIXICONS ===============-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+
+    <!--=============== CSS ===============-->
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Casper's Store</title>
+</head>
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+          <a href="#" class="nav-logo">
+            <img src="./assets/img/casper_logo_white.svg" alt="logo" />
+          </a>
+  
+          <!--=============== NAV ===============-->
+          <div class="nav-menu" id="nav-menu">
+            <ul class="nav-list">
+              <li class="nav-item">
+                <a href="#home" class="nav-link">Home</a>
+              </li>
+  
+              <li class="nav-item">
+                <a href="#about" class="nav-link">About me</a>
+              </li>
+  
+              <li class="nav-item">
+                <a href="#work" class="nav-link">Work</a>
+              </li>
+  
+              <li class="nav-item">
+                <a href="#bio" class="nav-link">BIO</a>
+              </li>
+  
+              <li class="nav-item">
+                <a href="#gear" class="nav-link">Gear</a>
+              </li>
+  
+              <li class="nav-item">
+                <a href="#contact" class="nav-link">Contact</a>
+              </li>
+            </ul>
+  
+            <i class="ri-close-line nav-close" id="nav-close"></i>
+          </div>
+  
+          <div class="nav-toggle" id="nav-toggle">
+            <i class="ri-menu-4-line"></i>
+          </div>
+        </nav>
+      </header>
+  
+      <main class="main">
+
+        <!--=============== HOME ===============-->
+        <section class="home" id="home">
+          <img src="./assets/img/home.jpg" alt="home image" class="home-img" />
+  
+          <div class="home-container container grid">
+            <div class="home-data">
+              <h1 class="home-data-title">
+                Bringing stories to life, one frame at a time.
+              </h1>
+  
+              <a href="#work" class="button gallery-button"
+                ><i class="ri-play-line"></i>Video Gallery</a
+              >
+            </div>
+  
+            <div class="home-social">
+              <a href="#" target="_blank" class="home-social-link"
+                ><i class="ri-youtube-fill"></i>
+              </a>
+  
+              <a href="#" target="_blank" class="home-social-link"
+                ><i class="ri-instagram-fill"></i>
+              </a>
+  
+              <a href="#" target="_blank" class="home-social-link"
+                ><i class="ri-facebook-circle-fill"></i>
+              </a>
+            </div>
+        </div>
+    </section>
+
+    <!--=============== ABOUT ===============-->
+    <section class="about section" id="about">
+      <h1 class="section-title">About Me</h1>
+
+      <div class="about-container container grid">
+        <img
+          src="./assets/img/profile.jpg"
+          alt="about image"
+          class="about-img"
+        />
+
+        <div class="about-data">
+          <div class="about-info">
+            <div class="about-box">
+              <i class="ri-award-line about-icon"></i>
+              <h3 class="about-title">Experience</h3>
+              <span class="about-subtitle">8 Years Working</span>
+            </div>
+
+            <div class="about-box">
+              <i class="ri-briefcase-line about-icon"></i>
+              <h3 class="about-title">Completed</h3>
+              <span class="about-subtitle">30 + Projects</span>
+            </div>
+          </div>
+
+          <p class="about-description">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Temporibus aliquid reprehenderit, rerum distinctio quia doloremque
+            error maiores neque quae, minus eos sequi aperiam, itaque
+            perspiciatis?
+          </p>
+
+          <a href="#contact" class="button about-button">Contact Me</a>
+        </div>
+      </div>
+    </section>
+
+    <!--=============== WORK ===============-->
+    <section class="work section" id="work">
+      <h1 class="section-title">Work</h1>
+
+      <div class="work-container container grid">
+        <div class="video"><video src="./assets/videos/video1.mp4" muted></video></div>
+        <div class="video"><video src="./assets/videos/video2.mp4" muted></video></div>
+        <div class="video"><video src="./assets/videos/video3.mp4" muted></video></div>
+        <div class="video"><video src="./assets/videos/video4.mp4" muted></video></div>
+        <div class="video"><video src="./assets/videos/video5.mp4" muted></video></div>
+        <div class="video"><video src="./assets/videos/video6.mp4" muted></video></div>
+      </div>
+
+      <div class="popup-video">
+        <span>&times;</span>
+        <video src="./assets/videos/video1.mp4" muted autoplay controls></video>
+      </div>
+    </section>
+
+    <!--=============== BIO ===============-->
+    <section class="bio section" id="bio">
+        <h1 class="section-title">BIO</h1>
+
+        <div class="bio-container container grid"></div>
+    </section>
+
+    <!--=============== GEAR ===============-->
+    <section class="gear section" id="gear">
+        <h1 class="section-title">Gear</h1>
+
+        <div class="gear-container container grid"></div>
+    </section>
+
+    <!--=============== CONTACT ===============-->
+    <section class="contact section" id="contact">
+        <h1 class="section-title">Contact Me</h1>
+
+        <div class="contact-container container grid">
+            <div class="contact-content-l">
+                <h3 class="contact-title">Talk to me</h3>
+
+                <div class="contact-info">
+                    <div class="contact-card">
+                        <i class="ri-mail-send-line contact-card-icon"></i>
+                        <h3 class="contact-card-title">Email</h3>
+                        <span class="contact-card-data">user@gmail.com</span>
+
+                        <a href="mailto:examplemail@gmail.com" target="_blank" class="contact-button">
+                            Write me <i class="ri-arrow-right-line contact-button-icon"></i>
+                        </a>
+                    </div>
+
+                    <div class="contact-card">
+                        <i class="ri-whatsapp-line contact-card-icon"></i>
+                        <h3 class="contact-card-title">Whatsapp</h3>
+                        <span class="contact-card-data">666-555-444</span>
+
+                        <a href="https://api.whatsapp.com/send?phone=51123456789&text=Hello, more information!" target="_blank" class="contact-button">
+                            Write me <i class="ri-arrow-right-line contact-button-icon"></i>
+                        </a>
+                    </div>
+
+                    <div class="contact-card">
+                        <i class="ri-messenger-line contact-card-icon"></i>
+                        <h3 class="contact-card-title">Messenger</h3>
+                        <span class="contact-card-data">user.fb123</span>
+
+                        <a href="https://m.me/casp.er.ghost.88" target="_blank" class="contact-button">
+                            Write me <i class="ri-arrow-right-line contact-button-icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="contact-content-r">
+                <h3 class="contact-title">Write me your project</h3>
+
+                <form action="" class="contact-form">
+                    <div class="contact-form-div">
+                        <label for="" class="contact-form-tag">Name</label>
+                        <input type="text" placeholder="Insert your name" class="contact-form-input">
+                    </div>
+
+                    <div class="contact-form-div">
+                        <label for="" class="contact-form-tag">Mail</label>
+                        <input type="email" placeholder="Insert your email" class="contact-form-input">
+                    </div>
+
+                    <div class="contact-form-div contact-form-area">
+                        <label for="" class="contact-form-tag">Project</label>
+                        <textarea name="" id="" cols="30" rows="10" placeholder="Write your project" class="contact-form-input"></textarea>
+                    </div>
+
+                    <button class="message-button">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+
+  </main>
+
+<!--=============== FOOTER ===============-->
+<footer class="footer">
+    <div class="footer-container container">
+        <a href="#home">
+            <img src="./assets/img/casper_logo_black.svg" class="footer-logo" alt="logo">
+        </a>
+
+        <ul class="footer-list">
+            <li>
+                <a href="#about" class="footer-link">About Me</a>
+            </li>
+
+            <li>
+                <a href="#work" class="footer-link">Work</a>
+            </li>
+
+            <li>
+                <a href="#bio" class="footer-link">BIO</a>
+            </li>
+
+            <li>
+                <a href="#gear" class="footer-link">Gear</a>
+            </li>
+        </ul>
+
+        <ul class="footer-social">
+            <a href="#" target="_blank" class="footer-social-link">
+                <i class="ri-facebook-fill"></i>
+            </a>
+
+            <a href="" target="_blank" class="footer-social-link">
+                <i class="ri-instagram-fill"></i>
+            </a>
+
+            <a href="" target="_blank" class="footer-social-link">
+                <i class="ri-youtube-fill"></i>
+            </a>
+        </ul>
+
+        <span class="footer-copy">
+            &#169; Kiss Attila István. All rights reserved
+        </span>
+    </div>
+</footer>
+
+<!--=============== SCROLL UP ===============-->
+<a href="#" class="scrollup" id="scroll-up">
+  <i class="ri-arrow-up-line scrollup-icon"></i>
+</a>
+
+<!--=============== SCROLL REVEAL ===============-->
+<script src="./assets/js/scrollreveal.min.js"></script>
+
+<!--=============== MAIN JS ===============-->
+  <script src="./assets/js/main.js"></script>
+</body>
+</html>
