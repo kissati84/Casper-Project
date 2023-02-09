@@ -98,3 +98,24 @@ function activeWork(){
 }
 
 linkWork.forEach(l=> l.addEventListener('click', activeWork))
+
+/*=============== SWIPER WORK ===============*/
+let swiperProjects = new Swiper(".projects-container", {
+  loop: true,
+  spaceBetween: 24,
+
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  pagination: {
+    el: ".swiper-pagination"
+  },
+  breakpoints: {
+    1200: {
+      slidesPerView: 2,
+      spaceBetween: -56
+    }
+  }
+});
+
