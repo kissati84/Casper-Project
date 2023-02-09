@@ -100,7 +100,7 @@ function activeWork(){
 linkWork.forEach(l=> l.addEventListener('click', activeWork))
 
 /*=============== SWIPER WORK ===============*/
-let swiperProjects = new Swiper(".projects-container", {
+let swiperProjects = new Swiper(".work-container", {
   loop: true,
   spaceBetween: 24,
 
