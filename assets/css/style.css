@@ -357,8 +357,8 @@ button {
     border: none;
   }
   
-  /*=============== WORK 1 ===============*/
- /* .work {
+  /*=============== WORK ===============*/
+ .work {
     background-color: var(--first-color);
   }
   
@@ -429,66 +429,7 @@ button {
     .popup-video video {
         width: 95%;
     }
-  } */
-
-  /*=============== WORK 2 ===============*/
-.work {
-  background-color: var(--first-color);
-}
-
-.work-container {
-  overflow: initial;
-}
-
-.work-content {
-  display: grid;
-  justify-content: center;
-}
-
-.work-img {
-  width: 250px;
-  border-radius: .75rem;
-  margin-bottom: 1.25rem;
-}
-
-.work-title {
-  font-size: var(--h2-font-size);
-  margin-bottom: 1.25rem;
-  margin: 0.5rem 0 1.25rem;
-  color: var(--second-color);
-}
-
-.work-button {
-  display: inline-flex;
-  align-items: center;
-  column-gap: .5rem;
-  color: var(--second-color);
-  font-size: var(--small-font-size);
-}
-
-.work-button i {
-  font-size: 1rem;
-  transition: transform .3s;
-}
-
-.work-button:hover i {
-  transform: translateX(.25rem);
-}
-
-/* Swiper class */
-.work-container .swiper-button-prev::after,
-.work-container .swiper-button-next::after {
-  content: '';
-}
-
-.work-container .swiper-button-prev,
-.work-container .swiper-button-next {
-  width: initial;
-  height: initial;
-  margin: initial;
-  font-size: 2.5rem;
-  color: var(--second-color);
-}
+  }
 
   /*=============== CONTACT ===============*/
   .contact {
