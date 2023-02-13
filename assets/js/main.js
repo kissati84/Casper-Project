@@ -1,3 +1,12 @@
+/*=============== INTRO ===============*/
+onload = () => {
+  const load = document.getElementById("load");
+
+  setTimeout(() => {
+    load.style.display = "none";
+  }, 2500);
+};
+
 /*==================== SHOW MENU ====================*/
 const navMenu = document.getElementById("nav-menu");
 navToggle = document.getElementById("nav-toggle");
@@ -65,7 +74,7 @@ const sr = ScrollReveal({
   //reset: true,
 })
 
-sr.reveal(`.home-data, .home-social-link, .work-container`,{
+sr.reveal(`.home-data, .home-social-link, .work-container, .gear-img`,{
   origin: 'top',
   interval: 100,
 })
@@ -77,4 +86,8 @@ sr.reveal(`.about-data, .contact-content-r`,{
 sr.reveal(`.about-img, .contact-content-l`,{
   origin: 'left',
   interval: 100,
+})
+
+sr.reveal(`.gear-card`,{
+  interval: 300,
 })
