@@ -48,7 +48,7 @@ function scrollHeader() {
 window.addEventListener("scroll", scrollHeader);
 
 /*==================== VIDEOS ====================*/
-document.querySelectorAll('.work-container video').forEach(vid => {
+/* document.querySelectorAll('.work-container video').forEach(vid => {
     vid.onclick = () => {
         document.querySelector('.popup-video').style.display = 'block';
         document.querySelector('.popup-video video').src = vid.getAttribute('src');
@@ -57,7 +57,7 @@ document.querySelectorAll('.work-container video').forEach(vid => {
 
 document.querySelector('.popup-video span').onclick = () =>{
     document.querySelector('.popup-video').style.display = 'none';
-}
+} */
 
 /*==================== SHOW SCROLL UP ====================*/
 function scrollUp(){
@@ -71,6 +71,7 @@ window.addEventListener('scroll', scrollUp)
 const sr = ScrollReveal({
   distance: '60px',
   duration: 2800,
+  delay: 400,
   //reset: true,
 })
 
