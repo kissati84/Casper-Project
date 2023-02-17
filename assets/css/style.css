@@ -293,7 +293,7 @@ button {
   }
   
   .home-social-link {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     width: max-content;
     color: var(--first-color);
   }
@@ -406,75 +406,8 @@ button {
     border-radius: 50px;
     border: none;
   }
-  
-  /*=============== WORK 1 ===============*/
- /* .work {
-    background-color: var(--first-color);
-  }
-  
-  .work-container {
-    row-gap: 2.5rem;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 15px;
-    justify-content: center;
-    padding: 10px;
-  }
-  .video {
-    height: 250px;
-    width: 350px;
-    border: 5px solid var(--second-color);
-    border-radius: 5px;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, .7);
-    cursor: pointer;
-    overflow: hidden;
-  }
-  .video video {
-    height: 100%;
-    width: 100%;
-    object-fit: cover;
-    transition: .2s linear;
-  }
-  .video:hover video {
-    transform: scale(1.1);
-  }
-  .popup-video {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: var(--z-fixed);
-    background: var(--first-color);
-    height: 100%;
-    width: 100%;
-    display: none;
-  }
-  .popup-video video {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 750px;
-    border-radius: 5px;
-    border: 3px solid var(--second-color);
-    object-fit: cover;
-  }
-  .popup-video span {
-    position: absolute;
-    top: 5px;
-    right: 20px;
-    font-size: 50px;
-    color: var(--second-color);
-    font-weight: var(--font-semi-bold);
-    z-index: var(--z-fixed);
-    cursor: pointer;
-  }
-  @media screen and (max-width: 768px) {
-    .popup-video video {
-        width: 95%;
-    }
-  } */
 
-/*=============== WORK 2 ===============*/
+/*=============== WORK ===============*/
 
 .work {
   background-color: var(--first-color);
@@ -858,6 +791,30 @@ button {
       margin-right: 1rem;
     }
   }
+
+  @media screen and (min-width: 360px) {
+    .home-data-title {
+      font-size: 4.5rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+
+    .work-card {
+      width: 300px;
+    }
+  
+    .work-img {
+      width: 270px;
+    }
+  }
+
+  @media screen and (min-width: 375px) {
+    .home-data-title {
+      font-size: 5rem;
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+  }
   
   /* For medium devices */
   @media screen and (min-width: 576px) {
@@ -967,14 +924,20 @@ button {
     grid-template-columns: repeat(2, max-content);
   }
 
-    .work-container {
-      grid-template-columns: repeat(2, max-content);
+    .work-card {
+      width: 325px;
     }
 
     .contact-container {
         grid-template-columns: repeat(2, max-content);
         justify-content: center;
         column-gap: 3rem;
+    }
+  }
+
+  @media screen and (min-width: 820px) {
+    .work-card {
+      width: 325px;
     }
   }
   
@@ -1004,7 +967,7 @@ button {
       width: 240px;
     }
     .home-data-title {
-      font-size: 10rem;
+      font-size: 8rem;
     }
     .home-social-link {
         padding: 0.4rem;
@@ -1131,7 +1094,24 @@ button {
     .container {
       max-width: 1024px;
     }
+
+    .work-card {
+      width: 335px;
+    }
   }
+
+  /* For 2K & 4K resolutions */
+@media screen and (min-width: 2048px) {
+  body {
+    zoom: 1.5;
+  }
+}
+
+@media screen and (min-width: 3840px) {
+  body {
+    zoom: 2;
+  }
+}
   
   /* For tall screens on mobiles and desktop */
   @media screen and (min-height: 721px) {
