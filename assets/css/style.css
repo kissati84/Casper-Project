@@ -70,7 +70,9 @@
 }
 
 /*=============== BASE ===============*/
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
@@ -293,7 +295,7 @@ button {
   }
   
   .home-social-link {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     width: max-content;
     color: var(--first-color);
   }
@@ -454,12 +456,159 @@ button {
   transition: 0.4s;
 }
 
-/*=============== WERK ===============*/
+/*=============== WERK GALLERY ===============*/
 .werk {
   background-color: var(--first-color);
 }
 
-  /*=============== GEAR ===============*/
+.werk-container {
+  width: 100%;
+  max-width: 120rem;
+  margin: auto;
+  padding: 0 1.5rem;
+}
+
+.image-gallery {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  grid-gap: 1.5rem;
+  grid-template-areas: 
+                'img-1 img-2 img-3 img-3'
+                'img-1 img-5 img-5 img-4'
+                'img-7 img-8 img-8 img-6';
+}
+
+.image-gallery a {
+  width: 100%;
+  height: 25rem;
+  border-radius: .75rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+}
+
+.image-gallery a i {
+  color: var(--second-color);
+  font-size: 1.5rem;
+  position: relative;
+  z-index: var(--z-fixed);
+  padding: 1rem 2rem;
+  border: 2px solid var(--second-color);
+  border-radius: .4rem;
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+.image-gallery::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: var(--first-color-alt);
+  opacity: 0;
+  transition: opacity .5s;
+}
+
+.image-gallery a:hover i,
+.image-gallery a:hover::before {
+  opacity: 1;
+}
+
+.img-1 {
+  grid-area: img-1;
+  min-height: 51.5rem;
+  background-image: url("../img/werk1.jpg");
+}
+
+.img-2 {
+  grid-area: img-2;
+  background-image: url("../img/werk2.jpg");
+}
+
+.img-3 {
+  grid-area: img-3;
+  background-image: url("../img/werk3.jpg");
+}
+
+.img-4 {
+  grid-area: img-4;
+  background-image: url("../img/werk4.jpg");
+}
+
+.img-5 {
+  grid-area: img-5;
+  background-image: url("../img/werk5.jpg");
+}
+
+.img-6 {
+  grid-area: img-6;
+  /*min-height: 51.5rem;*/
+  background-image: url("../img/werk6.jpg");
+}
+
+.img-7 {
+  grid-area: img-7;
+  background-image: url("../img/werk7.jpg");
+}
+
+.img-8 {
+  grid-area: img-8;
+  background-image: url("../img/werk8.jpg");
+}
+
+@media screen and (max-width: 900px) {
+  .image-gallery {
+    grid-template-areas: 
+                'img-1 img-1 img-2 img-2'
+                'img-1 img-1 img-3 img-3'
+                'img-4 img-4 img-5 img-5'               
+                'img-6 img-7 img-7 img-7'
+                'img-8 img-8 img-8 img-8';
+  }
+
+  .image-gallery a {
+    height: 20rem;
+  }
+
+  .img-1 {
+    min-height: 41.5rem;
+  }
+
+  .img-6 {
+    min-height: 20rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .image-gallery {
+    grid-template-areas: 
+                'img-1 img-1 img-1 img-1'
+                'img-2 img-2 img-2 img-2'
+                'img-3 img-3 img-3 img-3'               
+                'img-4 img-4 img-4 img-4'
+                'img-5 img-5 img-5 img-5'
+                'img-6 img-6 img-6 img-6'               
+                'img-7 img-7 img-7 img-7'
+                'img-8 img-8 img-8 img-8';
+  }
+
+  .image-gallery a,
+  .img-1,
+  .img-6 {
+    min-height: 15rem;
+    height: 15rem;
+  }
+}
+
+/*=============== GEAR ===============*/
 .gear {
   background-color: var(--first-color);
   overflow: hidden;
@@ -971,7 +1120,7 @@ button {
     }
     .home-social-link {
         padding: 0.4rem;
-        font-size: 1.25rem;
+        font-size: 1.4rem;
     }
 
     .about-container {

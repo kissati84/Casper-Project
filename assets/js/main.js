@@ -47,17 +47,24 @@ function scrollHeader() {
 }
 window.addEventListener("scroll", scrollHeader);
 
-/*==================== VIDEOS ====================*/
-/* document.querySelectorAll('.work-container video').forEach(vid => {
-    vid.onclick = () => {
-        document.querySelector('.popup-video').style.display = 'block';
-        document.querySelector('.popup-video video').src = vid.getAttribute('src');
-    }
+/*==================== SWIPER JS GALLERY ====================*/
+let swiperCards = new Swiper(".gallery-cards", {
+  loop: true,
+  loopedSlides: 5,
+  cssMode: true,
+  effect: 'fade',
 });
 
-document.querySelector('.popup-video span').onclick = () =>{
-    document.querySelector('.popup-video').style.display = 'none';
-} */
+let swiperThumbs = new Swiper(".gallery-thumbs", {
+  loop: true,
+  loopedSlides: 5,
+  slidesPerView: 3,
+  centeredSlides: true,
+  slideToClickedSlide: true,
+});
+
+swiperThumbs.controller.control = swiperCards
+
 
 /*==================== SHOW SCROLL UP ====================*/
 function scrollUp(){
@@ -75,9 +82,9 @@ const sr = ScrollReveal({
   //reset: true,
 })
 
-sr.reveal(`.home-data, .home-social-link, .work-container, .gear-img`,{
+sr.reveal(`.home-data, .home-social-link, .work-container, .werk-container, .gear-img`,{
   origin: 'top',
-  interval: 100,
+  interval: 200,
 })
 
 sr.reveal(`.about-data, .contact-content-r`,{
