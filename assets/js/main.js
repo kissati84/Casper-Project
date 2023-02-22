@@ -1,4 +1,4 @@
-/*=============== INTRO ===============*/
+/*=============== LOADER ===============*/
 onload = () => {
   const load = document.getElementById("load");
 
