@@ -463,7 +463,7 @@
                     <div class="contact-card">
                         <i class="ri-mail-send-line contact-card-icon"></i>
                         <h3 class="contact-card-title">Email</h3>
-                        <span class="contact-card-data">user@gmail.com</span>
+                        <span class="contact-card-data">info@caspersstore.com</span>
 
                         <a href="mailto:examplemail@gmail.com" target="_blank" class="contact-button">
                             Írj nekem <i class="ri-arrow-right-line contact-button-icon"></i>
@@ -483,9 +483,9 @@
                     <div class="contact-card">
                         <i class="ri-messenger-line contact-card-icon"></i>
                         <h3 class="contact-card-title">Messenger</h3>
-                        <span class="contact-card-data">user.fb123</span>
+                        <span class="contact-card-data">casper's store</span>
 
-                        <a href="https://m.me/casp.er.ghost.88" target="_blank" class="contact-button">
+                        <a href="https://m.facebook.com/caspersstoretheone/" target="_blank" class="contact-button">
                             Írj nekem <i class="ri-arrow-right-line contact-button-icon"></i>
                         </a>
                     </div>
@@ -495,23 +495,25 @@
             <div class="contact-content-r">
                 <h3 class="contact-title">Ajánlat kérése </h3>
 
-                <form action="" class="contact-form">
+                <form action="" class="contact-form" id="contact-form">
                     <div class="contact-form-div">
-                        <label for="" class="contact-form-tag">Név</label>
-                        <input type="text" placeholder="" class="contact-form-input">
+                        <label class="contact-form-tag">Név</label>
+                        <input type="text" name="user-name" required placeholder="" class="contact-form-input" id="contact-name">
                     </div>
 
                     <div class="contact-form-div">
                         <label for="" class="contact-form-tag">Mail</label>
-                        <input type="email" placeholder="" class="contact-form-input">
+                        <input type="email" name="user-email" required placeholder="" class="contact-form-input" id="contact-email">
                     </div>
 
                     <div class="contact-form-div contact-form-area">
-                        <label for="" class="contact-form-tag">Projekt</label>
-                        <textarea name="" id="" cols="30" rows="10" placeholder="" class="contact-form-input"></textarea>
+                        <label class="contact-form-tag">Projekt</label>
+                        <textarea name="user-project" placeholder="" id="contact-project" class="contact-form-input" cols="30" rows="10" ></textarea>
                     </div>
 
-                    <button class="message-button">Üzenet küldése</button>
+                    <p class="contact-message" id="contact-message"></p>
+
+                    <button type="submit" class="message-button">Üzenet küldése</button>
                 </form>
             </div>
         </div>
@@ -575,6 +577,9 @@
 
 <!---------------- SWIPER JS ------------------->
 <script src="./assets/js/swiper-bundle.min.js"></script>
+
+<!--=============== EMAIL JS ===============-->
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 
 <!--=============== MAIN JS ===============-->
   <script src="./assets/js/main.js"></script>

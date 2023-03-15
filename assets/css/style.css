@@ -313,6 +313,7 @@ button {
     font-family: var(--title-font);
     font-weight: var(--font-semi-bold-italic);
     transition: 0.3s;
+    margin-top: 2rem;
   }
   
   .button i {
@@ -830,6 +831,20 @@ button {
     resize: none;
   }
 
+  .contact-message {
+    font-size: var(--small-font-size);
+    position: absolute;
+    left: 2.5rem;
+  }
+
+  /* Status color */
+  .color-red {
+    color: hsl(4, 71%, 50%);
+  }
+
+  .color-blue {
+    color: hsl(207, 56%, 45%);
+  }
 
   /*=============== FOOTER ===============*/
   .footer {
